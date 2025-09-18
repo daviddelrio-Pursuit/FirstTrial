@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Portfolio — Your Name</title>
+	<meta name="description" content="Personal portfolio showcasing projects, skills, and contact information." />
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<a class="logo" href="#">Your Name</a>
+			<nav class="main-nav" id="main-nav">
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="header-actions">
+				<button id="theme-toggle" aria-label="Toggle dark mode">🌓</button>
+				<button id="nav-toggle" aria-label="Toggle menu" class="nav-toggle">☰</button>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero" id="home">
+			<div class="container hero-inner">
+				<div class="hero-text">
+					<h1>Hi — I'm <span class="accent">Your Name</span></h1>
+					<p class="lead">A brief one-liner about what you do. I build accessible, fast, and beautiful web experiences.</p>
+					<p class="cta-row">
+						<a class="btn" href="#projects">View Projects</a>
+						<a class="btn btn-ghost" href="#contact">Get in touch</a>
+					</p>
+				</div>
+				<div class="hero-graphic" aria-hidden="true">
+					<!-- Simple SVG placeholder avatar -->
+					<svg width="220" height="220" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg" role="img">
+						<rect width="220" height="220" rx="16" fill="#E6F0FF" />
+						<circle cx="110" cy="88" r="34" fill="#9BB7FF" />
+						<rect x="44" y="140" width="132" height="28" rx="6" fill="#BFD6FF" />
+					</svg>
+				</div>
+			</div>
+		</section>
+
+		<section class="container about" id="about">
+			<h2>About</h2>
+			<div class="about-grid">
+				<div>
+					<p>I’m a web developer focused on building inclusive user experiences and performant front-end applications. I enjoy learning new tools and solving problems with clean code.</p>
+					<ul class="meta-list">
+						<li><strong>Location:</strong> Your City</li>
+						<li><strong>Availability:</strong> Open to work</li>
+						<li><strong>Contact:</strong> <a href="#contact">hello@youremail.com</a></li>
+					</ul>
+				</div>
+				<div>
+					<h3>Skills</h3>
+					<p>HTML, CSS, JavaScript, React, Node.js, Accessibility, Performance</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="container projects" id="projects">
+			<h2>Projects</h2>
+			<div class="projects-grid">
+				<article class="card">
+					<div class="card-art" aria-hidden="true">
+						<svg viewBox="0 0 400 200" preserveAspectRatio="none"><rect width="400" height="200" fill="#F3F7FF"/></svg>
+					</div>
+					<div class="card-body">
+						<h3>Project One</h3>
+						<p>Short description of the project, tech used, and outcome.</p>
+						<p class="card-links"><a href="#">Live</a> · <a href="#">Code</a></p>
+					</div>
+				</article>
+				<article class="card">
+					<div class="card-art" aria-hidden="true">
+						<svg viewBox="0 0 400 200" preserveAspectRatio="none"><rect width="400" height="200" fill="#FFEFE6"/></svg>
+					</div>
+					<div class="card-body">
+						<h3>Project Two</h3>
+						<p>Short description of the project, tech used, and outcome.</p>
+						<p class="card-links"><a href="#">Live</a> · <a href="#">Code</a></p>
+					</div>
+				</article>
+				<article class="card">
+					<div class="card-art" aria-hidden="true">
+						<svg viewBox="0 0 400 200" preserveAspectRatio="none"><rect width="400" height="200" fill="#E6FFE9"/></svg>
+					</div>
+					<div class="card-body">
+						<h3>Project Three</h3>
+						<p>Short description of the project, tech used, and outcome.</p>
+						<p class="card-links"><a href="#">Live</a> · <a href="#">Code</a></p>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<section class="container contact" id="contact">
+			<h2>Contact</h2>
+			<p>If you'd like to work together, send a message using the form below or reach out via email.</p>
+			<form id="contact-form" class="contact-form" action="#" onsubmit="return false;">
+				<label>
+					<span>Name</span>
+					<input type="text" name="name" required>
+				</label>
+				<label>
+					<span>Email</span>
+					<input type="email" name="email" required>
+				</label>
+				<label>
+					<span>Message</span>
+					<textarea name="message" rows="5" required></textarea>
+				</label>
+				<p><button class="btn" type="submit">Send Message</button></p>
+			</form>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container footer-inner">
+			<p>&copy; <span id="current-year"></span> Your Name — Built with ❤️</p>
+			<p class="social">
+				<a href="#" aria-label="GitHub">GitHub</a>
+				<a href="#" aria-label="LinkedIn">LinkedIn</a>
+			</p>
+		</div>
+	</footer>
+
+	<script src="script.js" defer></script>
+</body>
+</html>
+
